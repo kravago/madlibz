@@ -22,4 +22,16 @@ describe("#addCommas", () => {
     expect(typeof output).toBe("string");
     expect(output).toBe("9,876,543,210");
   });
+
+  test("Test case #4 (bonus)", () => {
+    const output = addCommas(-10);
+    expect(typeof output).toBe("string");
+    expect(output).toBe("-10");
+  })
+
+  test("Test case #5 (bonus)", () => {
+    const output = addCommas(-50678);
+    expect(typeof output).toBe("string");
+    expect(output).toBe("-50,678");
+  })
 });
